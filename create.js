@@ -2,11 +2,13 @@ const fs = require('fs-extra')
 		, irregularPlurals = require('irregular-plurals')
 		, pluralize = require('pluralize')
 var nouns = fs.readJsonSync('./noun_list.json')
-	, hash = {}
+, hash = {}
+, len = nouns.length
+, singular, plural
 
-for(var i = nouns.length; i--; ){
-	var singular = nouns[i]
-	var plural = null
+for(var i = 0; i < len; ++i){
+	singular = nouns[i]
+	plural = null
 	if(irregularPlurals[singular]){
 		plural = irregularPlurals[singular];
 	} else {
