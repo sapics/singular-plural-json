@@ -1,16 +1,20 @@
 {
   "name": "singular-plural-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "output.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "create": "node create.js"
   },
   "keywords": [
     "singular",
     "plural",
     "noun"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapics/singular-plural-json.git"
+  },
   "author": "sapics",
   "license": "MIT",
   "devDependencies": {

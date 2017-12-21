@@ -15,4 +15,4 @@ for(var i = nouns.length; i--; ){
 	hash[singular] = plural
 }
 
-fs.writeFile('./index.js', 'module.exports=' + JSON.stringify(hash).replace(/"(\w+)":/g, "$1:"));
+fs.writeFile('./output.js', 'module.exports=' + JSON.stringify(hash).replace(/"(\w+)":/g, "$1:"));
