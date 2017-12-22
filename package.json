@@ -1,7 +1,7 @@
 {
   "name": "singular-plural-json",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.3",
+  "description": "Hash data of singular(key) and plural(value)",
   "main": "output.js",
   "scripts": {
     "create": "node create.js"
@@ -11,15 +11,20 @@
     "plural",
     "noun"
   ],
+  "files": [
+    "output.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sapics/singular-plural-json.git"
   },
+  "homepage": "https://github.com/sapics/singular-plural-json",
   "author": "sapics",
   "license": "MIT",
   "devDependencies": {
     "fs-extra": "^5.0.0",
     "irregular-plurals": "^1.4.0",
+    "noun-json": "^1.0.0",
     "pluralize": "^7.0.0"
   }
 }
