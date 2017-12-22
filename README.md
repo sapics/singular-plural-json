@@ -13,5 +13,3 @@ var spJson = require('singular-plural-json')
 console.log(spJson)
 // {book:"books",dog:"dogs", ... }
 ```
-
-This project uses noun list from http://www.desiquintans.com/nounlist.

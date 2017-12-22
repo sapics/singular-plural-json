@@ -1,13 +1,14 @@
 const fs = require('fs-extra')
 		, irregularPlurals = require('irregular-plurals')
 		, pluralize = require('pluralize')
-var nouns = require('noun-json')
-	, hash = {}
-	, len = nouns.length
+var hash = {}
 	, singular, plural
-
+	, list = require('noun-json')
+list.push.apply(list, require('pronoun-json'))
+list.sort()
+var len = list.length
 for(var i = 0; i < len; ++i){
-	singular = nouns[i]
+	singular = list[i]
 	plural = null
 	if(irregularPlurals[singular]){
 		plural = irregularPlurals[singular];
